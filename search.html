@@ -1,0 +1,66 @@
+<div class="container">
+<div class="jumbotron">
+    
+        <h1 class="headtag">Search Bar</h1>
+
+        <div>
+            <form>
+                <div>
+                    <label style="font-size: 30px">Enter Train Number/Name:</label>
+                    <input type="text"  class="textbox" name="searchNumber" ng-model="Train.searchNumber">
+                </div>
+
+                <div>
+                    <input class="button" type="button" value="search" ng-click="searchNumber()">
+                    <input class="button" type="button" value="clear" ng-click="clear()">
+                </div>
+
+            </form>
+            <div>
+                <div class="customDiv">
+                <table class="table-striped table-hover table-bordered" align="center" >
+                    <tbody >
+                        <tr ng-repeat="r in name" >
+
+                            <td>{{r.name}}</td>
+                            <td ng-click="searchTime(r.number);">{{r.number}}</u></td>
+                        </tr>
+                    </tbody>   
+                </table>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="customDiv">
+                    <table  ng-repeat="d in day" border="1"  style="float:left;"  > 
+
+                        <tbody>
+                            <tr>
+                                <td>{{d.code}}</td></tr>
+                            <tr> <td>{{d.runs}}</td>
+                            </tr>
+                        </tbody> 
+
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="customDiv">
+                    <table  border="1" > 
+                        <tbody >
+                            <tr ng-repeat="r in route">
+                                <td>{{r.fullname}}</td>
+                                <td>{{r.scharr}}</td>
+                                <td>{{r.schdep}}</td>
+                        </tbody>   
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

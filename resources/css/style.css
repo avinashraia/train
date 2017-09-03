@@ -1,0 +1,46 @@
+@media(mi-width:768px)
+{
+    .navbar-nav {
+        float:none;
+        margin:0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav > li {
+        display: inline-block;
+        float:none;
+    }
+}
+
+.navbar-inverse{
+    background-color: gray;
+   float: right;  
+    
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: red;
+    font-size: 18px
+       
+}
+
+.navbar-inverse .navbar-brand {
+    color: red;
+    background-color:black;
+    font-size: 24px;
+}
+
+.customDiv
+{
+    margin: 10px;
+}
+.banner
+{
+    height: 200px;
+    background-image: url(images/gorakhpur-junction%20-%20Copy.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    margin-top: 30px;
+}
