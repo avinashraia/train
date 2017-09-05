@@ -18,8 +18,8 @@ trainApp.controller("searchController",function($scope,$http)
         console.log("searched Number")
 
         var reqNumber={
-            method:"JSONP",
-            url:"//api.railwayapi.com/v2/suggest-train/train/"+$scope.Train.searchNumber+"/apikey/k9ef9ek6fi",
+            method:"get",
+            url:"httpS://api.railwayapi.com/v2/suggest-train/train/"+$scope.Train.searchNumber+"/apikey/k9ef9ek6fi",
             cache:false
            
         };
@@ -46,8 +46,8 @@ trainApp.controller("searchController",function($scope,$http)
         console.log(nm);
 
         var req={
-             method:"JSONP",
-            url:"http://api.railwayapi.com/v2/route/train/"+nm+"/apikey/k9ef9ek6fi/",
+             method:"get",
+            url:"httpS://api.railwayapi.com/v2/route/train/"+nm+"/apikey/k9ef9ek6fi/",
          cache:false
         };
 
