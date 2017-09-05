@@ -18,8 +18,9 @@ trainApp.controller("searchController",function($scope,$http)
         console.log("searched Number")
 
         var reqNumber={
-            method:"get",
+            method:"JSONP",
             url:"//api.railwayapi.com/v2/suggest-train/train/"+$scope.Train.searchNumber+"/apikey/k9ef9ek6fi",
+            cache:false
            
         };
 
