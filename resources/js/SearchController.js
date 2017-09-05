@@ -46,8 +46,10 @@ trainApp.controller("searchController",function($scope,$http)
         console.log(nm);
 
         var req={
-            method:"GET",
-            url:"http://api.railwayapi.com/v2/route/train/"+nm+"/apikey/k9ef9ek6fi/"};
+             method:"JSONP",
+            url:"http://api.railwayapi.com/v2/route/train/"+nm+"/apikey/k9ef9ek6fi/",
+         cache:false
+        };
 
         var successTime=function success(resp)
         {
