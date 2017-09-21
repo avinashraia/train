@@ -19,7 +19,7 @@ trainApp.controller("searchController",function($scope,$http)
 
         var reqNumber={
             method:"get",
-            url:"httpS://api.railwayapi.com/v2/suggest-train/train/"+$scope.Train.searchNumber+"/apikey/k9ef9ek6fi",
+            url:"https://api.railwayapi.com/v2/suggest-train/train/"+$scope.Train.searchNumber+"/apikey/k9ef9ek6fi",
             cache:false
            
         };
@@ -47,7 +47,7 @@ trainApp.controller("searchController",function($scope,$http)
 
         var req={
              method:"get",
-            url:"httpS://api.railwayapi.com/v2/route/train/"+nm+"/apikey/k9ef9ek6fi/",
+            url:"https://api.railwayapi.com/v2/route/train/"+nm+"/apikey/k9ef9ek6fi/",
          cache:false
         };
 
